@@ -21,7 +21,7 @@ bob2=new Bob(465,290,65);
 bob3=new Bob(530,290,65);
 bob4=new Bob(335,290,65);
 bob5=new Bob(270,290,65);
-
+bob3.debug=true;
 roof = new Roof(400,45,375,30);
 
 rope1 = new Rope(bob1.body, roof.body,-BobDiameter*2, 0);
@@ -54,7 +54,7 @@ function draw() {
 function keyPressed() {
 	if (keyCode === UP_ARROW) {
 
-	  Matter.Body.applyForce(bob3.body,bob3.body.position,{x:50,y:45});
+	  Matter.Body.applyForce(bob3.body,bob3.body.position,{x:50,y:+45});
 
 	}
 }
